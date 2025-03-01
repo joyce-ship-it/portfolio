@@ -57,10 +57,15 @@ export default function Projects() {
     },
   ];
   return (
-    <main className="flex flex-wrap sm:w-full md: w:full lg:w-[1000px] sm:gap-4 md:gap-6 gap-2">
-      {projectArr.map((item) => {
-        return <Item key={item.id} data={item}></Item>;
-      })}
-    </main>
+    <>
+      <main className="flex flex-wrap sm:w-full md: w-full lg:w-full sm:gap-4 md:gap-6 gap-2 justify-center mt-8 p-4 sm:p-6 ">
+        {projectArr.map((item) => {
+          return <Item key={item.id} data={item}></Item>;
+        })}
+      </main>
+      <footer className="bg-black text-green-500 p-2 sm:p-4 w-screen">
+        contact: joycethomas2244@gmail.com
+      </footer>
+    </>
   );
 }
