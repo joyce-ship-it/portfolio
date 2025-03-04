@@ -4,9 +4,18 @@ import restaurant from "../assets/restaurant.png";
 import library from "../assets/library.png";
 import signUp from "../assets/sign-up.png";
 import tictactoe from "../assets/tic-tac-toe.png";
+import shoppingcart from "../assets/shoppingcart.png";
 import Item from "./Item";
 export default function Projects() {
   const projectArr = [
+    {
+      id: 7,
+      name: "shopping-cart",
+      img: shoppingcart,
+      type: "React",
+      githubURL: "https://github.com/joyce-ship-it/shopping-cart",
+      liveURL: "https://shopping-cart-top12.netlify.app/",
+    },
     {
       id: 1,
       name: "fast react pizza",
